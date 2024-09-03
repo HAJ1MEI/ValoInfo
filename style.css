@@ -1,0 +1,366 @@
+:root{
+    --primary-color: #0e0e0e;
+    --secondary-color: #7babd4;
+    --primary-accent: #4e4e4e;
+    --secondary-accent: #24517e;
+    --primary-text: #e2e2e2;
+    --secondary-text: #bd3838;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+header{
+    margin: 0;
+}
+
+/* NAVBAR */
+
+nav{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+
+nav h2{
+    position: relative;
+    top: -65px;
+    left: 100px;
+    text-decoration: none;
+    color: var(--primary-text);
+    z-index: 10;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--primary-text);
+    cursor: default;
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--primary-text);
+    font-weight: 600;
+}
+
+nav img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 5px 30px;
+    z-index: 5;
+}
+
+.nav-items{
+    gap: 50px;
+}
+
+.nav-items li:hover{
+    color: var(--secondary-text);
+    cursor:default;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px 10px;
+    gap: 5px;
+    /* background-color: var(--secondary-text); */
+    width: 250px;
+}
+
+button{
+    margin: 0;
+    width: 100px;
+    border: 0px solid var(--primary-text);
+    border-radius:10px ;
+    color: var(--primary-text);
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: var(--primary-color);
+    /* background-color: var(--secondary-text); */
+}
+
+button:hover{
+    background-color: var(--secondary-text);
+    color: var(--primary-text);
+}
+
+/* HERO SECTION */
+
+.Hero{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    z-index: 0;
+}
+.Hero h1{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    font-family: Valorant;
+    font-size: 90px;
+    color: var(--secondary-text);
+    text-shadow: 0px 0px .5px var(--primary-text);
+    z-index: 2;
+}
+
+.Hero p{
+    position: absolute;
+    top: 68%;
+    left: 5%;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--primary-text);
+    z-index: 5;
+}
+.Hero a{
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    top: 79%;
+    left: 5%;
+    font-weight: 700;
+    font-size: 20px;
+    width: 130px;
+    border: 2px solid var(--secondary-text);
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text);
+    z-index: 5;
+    box-shadow: 0px 0px 10px 0px var(--secondary-text);
+}
+
+.Hero a:hover{
+    background-color: var(--secondary-text);
+    color: var(--primary-text);
+    cursor: default;
+}
+
+.news{
+    margin: 0;
+    font-family: Tungsten, Oswald;
+    font-size: 30px;
+    width: 100%;
+    height: 500px;
+    color: var(--primary-color);
+    /* background-color: var(--secondary-color); */
+}
+
+.news h1{
+    position: relative;
+    top: 20px;
+    text-indent: 70px;
+    /* left: 60px; */
+}
+
+.cards{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background-color: violet;
+    height: 320px;
+    width: 550px;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+.cards img{
+    position: absolute;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.cards h2{
+    position: relative;
+    top: 150px;
+    left: 20px;
+    font-size: 50px;
+    color: var(--primary-text);
+    transition: .2s ease;
+    z-index: 6;
+}
+
+.cards:hover img{
+    filter: blur(5px);
+    color: var(--secondary-text);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.cards:hover h2{
+    color: var(--primary-text);
+    top: 50px;
+    left: 20px;
+    font-size: 80px;
+}
+
+.mastercard{
+    display: flex;
+    color: var(--secondary-text);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.youragent{
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url('/Assets/agentsilo.png'); */
+    background-color: var(--secondary-text);
+    text-indent: 6.9%;
+    height: 550px;
+    width: 100%;
+    z-index: 7;
+}
+
+.agentsilo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .2;
+    z-index: 2;
+}
+.agentsduo {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+.youragent h1{
+    position: relative;
+    font-family: Tungsten, Oswald;
+    font-size: 90px;
+    top: 20px;
+    /* left: 60px; */
+    color: var(--primary-text);
+    z-index: 7;
+}
+.youragent h3{
+    margin: 0px;
+    position: relative;
+    font-family: Tungsten, Oswald;
+    font-weight:lighter;
+    font-size: 50px;
+    top: -30px;
+    /* left: 60px; */
+    color: var(--primary-text);
+    z-index: 7;
+}
+.youragent p{
+    margin: 0px;
+    position: relative;
+    text-indent: 0px;
+    width: 600px;
+    font-size: 20px;
+    font-weight: lighter;
+    top: -20px;
+    left: 130px;
+    color: var(--primary-text);
+    z-index: 7;
+}
+
+.youragent a{
+    text-decoration: none;
+    position: relative;
+    font-family: Tungsten, Oswald;
+    font-size: 40px;
+    color:var(--primary-text);
+    padding: 2px 9px;
+    border: 2px solid var(--primary-text);
+    border-radius: 5px;
+    top: 20px;
+    left: 130px;
+    z-index: 7;
+    transition: .2s ease-in;
+}
+
+.youragent a:hover{
+    background-color: var(--primary-text);
+    color: var(--secondary-text);
+    cursor: default;
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: var(--primary-text);
+    height: 700px;
+    width: 100%;
+}
+
+.master_section3{
+    display: flex;
+    
+}
+
+.section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: var(--secondary-text);
+    height: 550px;
+    width: 100%;
+}
+.section5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: var(--primary-text);
+    height: 700px;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tungsten, Oswald;
+    font-size: 100px;
+    background-color: var(--primary-color);
+    color: var(--secondary-text);
+    height: 500px;
+    width: 100%;
+}
+
+.error404 img{
+    margin: 0;
+    overflow: hidden;
+    height: 1080px;
+    width: 1920px;
+}
